@@ -56,6 +56,8 @@
 		284495E82667591F004D50B9 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		284495ED2667595F004D50B9 /* RunOc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunOc.h; sourceTree = "<group>"; };
 		284495EE2667595F004D50B9 /* RunOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunOc.m; sourceTree = "<group>"; };
+		2844960526677F78004D50B9 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		2844960626677F87004D50B9 /* isa_t.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = isa_t.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,8 @@
 				284495E62667591F004D50B9 /* SutdyRuntime-Bridging-Header.h */,
 				284495ED2667595F004D50B9 /* RunOc.h */,
 				284495EE2667595F004D50B9 /* RunOc.m */,
+				2844960626677F87004D50B9 /* isa_t.md */,
+				2844960526677F78004D50B9 /* __init__.py */,
 			);
 			path = SutdyRuntime;
 			sourceTree = "<group>";
