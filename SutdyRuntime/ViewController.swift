@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cls = RunOc()
+        cls.__init__()
         // Do any additional setup after loading the view.
     }
 
