@@ -15,6 +15,8 @@
 		284495C0266758ED004D50B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284495BE266758ED004D50B9 /* LaunchScreen.storyboard */; };
 		284495CB266758ED004D50B9 /* SutdyRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284495CA266758ED004D50B9 /* SutdyRuntimeTests.swift */; };
 		284495D6266758ED004D50B9 /* SutdyRuntimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284495D5266758ED004D50B9 /* SutdyRuntimeUITests.swift */; };
+		284495E92667591F004D50B9 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 284495E82667591F004D50B9 /* UserInfo.m */; };
+		284495EF2667595F004D50B9 /* RunOc.m in Sources */ = {isa = PBXBuildFile; fileRef = 284495EE2667595F004D50B9 /* RunOc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		284495D1266758ED004D50B9 /* SutdyRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SutdyRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		284495D5266758ED004D50B9 /* SutdyRuntimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SutdyRuntimeUITests.swift; sourceTree = "<group>"; };
 		284495D7266758ED004D50B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284495E62667591F004D50B9 /* SutdyRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SutdyRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
+		284495E72667591F004D50B9 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		284495E82667591F004D50B9 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		284495ED2667595F004D50B9 /* RunOc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunOc.h; sourceTree = "<group>"; };
+		284495EE2667595F004D50B9 /* RunOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunOc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,11 @@
 				284495BC266758ED004D50B9 /* Assets.xcassets */,
 				284495BE266758ED004D50B9 /* LaunchScreen.storyboard */,
 				284495C1266758ED004D50B9 /* Info.plist */,
+				284495E72667591F004D50B9 /* UserInfo.h */,
+				284495E82667591F004D50B9 /* UserInfo.m */,
+				284495E62667591F004D50B9 /* SutdyRuntime-Bridging-Header.h */,
+				284495ED2667595F004D50B9 /* RunOc.h */,
+				284495EE2667595F004D50B9 /* RunOc.m */,
 			);
 			path = SutdyRuntime;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				TargetAttributes = {
 					284495AF266758EA004D50B9 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					284495C5266758ED004D50B9 = {
 						CreatedOnToolsVersion = 12.3;
@@ -258,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284495E92667591F004D50B9 /* UserInfo.m in Sources */,
 				284495B8266758EA004D50B9 /* ViewController.swift in Sources */,
 				284495B4266758EA004D50B9 /* AppDelegate.swift in Sources */,
 				284495B6266758EA004D50B9 /* SceneDelegate.swift in Sources */,
+				284495EF2667595F004D50B9 /* RunOc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,15 +451,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SRW54YFJJ3;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = T8SDZM6J7S;
 				INFOPLIST_FILE = SutdyRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.SutdyRuntime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test111.trendplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = test1111DevFile524;
+				SWIFT_OBJC_BRIDGING_HEADER = "SutdyRuntime/SutdyRuntime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,15 +476,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SRW54YFJJ3;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = T8SDZM6J7S;
 				INFOPLIST_FILE = SutdyRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.SutdyRuntime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test111.trendplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = test1111DevFile524;
+				SWIFT_OBJC_BRIDGING_HEADER = "SutdyRuntime/SutdyRuntime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
